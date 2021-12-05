@@ -1,1 +1,71 @@
+<<<<<<< Updated upstream
 /* No CSS *//*# sourceMappingURL=main.css.map */
+=======
+body {
+  margin: 0;
+  font-family: monospace;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.navbar {
+  background: #000000e6;
+  color: #690DAB;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.welcome {
+  background: #690dabda;
+}
+
+.about {
+  background: #2b2b2bda;
+  color: #690DAB;
+}
+
+.education {
+  background: #690dabda;
+}
+
+.contact {
+  background: #2b2b2bda;
+  text-decoration: none;
+  color: #690DAB;
+  text-align: center;
+}
+
+.me {
+  border-radius: 50%;
+  border: 3px solid #690DAB;
+}
+
+a {
+  font-size: 1.3em;
+  color: #690DAB;
+}
+
+a:hover {
+  font-size: 1.3em;
+  color: #e100ffa9;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 2em 2em;
+}
+
+h2 {
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */
+>>>>>>> Stashed changes

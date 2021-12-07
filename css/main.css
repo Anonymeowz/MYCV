@@ -8,6 +8,7 @@ body {
   font-family: monospace;
   font-size: 1.4em;
   font-weight: bold;
+  padding: 0;
 }
 
 .navbar {
@@ -68,7 +69,6 @@ body {
   background: #42076bd5;
   font-size: 1.5em;
   text-align: center;
-  padding: 0;
 }
 
 .education .scontainer {
@@ -150,10 +150,10 @@ h2 {
 }
 
 #preloader {
-  background-image: #000 url(images/loader.gif) no-repeat center;
-  background-size: 30%;
+  background: #000000 url(gif/load.gif) no-repeat center center;
+  background-size: 40%;
   height: 100vh;
-  width: 100vh;
+  width: 100%;
   position: fixed;
   z-index: 100;
 }

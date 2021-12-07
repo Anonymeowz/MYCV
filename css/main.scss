@@ -127,3 +127,31 @@ h2{
     position: fixed;
     z-index: 100;
 }
+
+.api{
+    height: auto;
+    width: 650px;
+    background: #1b1b1bda;
+    color: #690DAB;
+    padding: 1em;
+    border-radius: 50px;
+    margin: auto;
+
+    .profile img{
+        text-align: center;
+        height: 5.5em;
+        width: 5.5em;
+        border-radius:50%;
+        border: 3px solid #690DAB;
+        margin: auto; 
+    }
+
+    .info ul{
+        display: flex;
+    }
+
+    ul li{
+        margin: auto;
+    }
+
+}

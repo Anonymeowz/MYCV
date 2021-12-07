@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
-    <body>
+    <body  onload="getDetails()";>
 
         <div id="preloader"></div>
 
@@ -132,6 +132,25 @@
                         <div class="adv">Advanced(80%)</div>
                     </div>  
                 </div>  
+
+                <div class="container">
+                    <h3>My Git</h3>
+                    <div class="api" id="api">
+                        <div class="profile" id="profile"></div>
+                        <div class="username">
+                            <h3 id="username"></h3>
+                        </div>
+                        <div class="bio">
+                            <p id="bio"></p>
+                        </div>
+                        <div class="info">
+                            <ul>
+                                <li id="followers"></li>
+                                <li id="following"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="contact" class="contact">
@@ -159,5 +178,20 @@
                 loader.style.display = "none";
             })
         </script>
+
     </body>
+    <script>
+        function getDetails(){
+            document.getElementById('api').style.display="block";
+            fetch(`https://api.github.com/users/Anonymeowz`)
+            .then(response=>response.json().then(data=>{
+                document.getElementById('profile').innerHTML=`
+                <img src="${data.avatar_url}"/>`
+                document.getElementById('username').innerHTML=data.login;
+                document.getElementById('bio').innerHTML=data.bio;
+                document.getElementById('followers').innerHTML=data.followers + " Followers";
+                document.getElementById('following').innerHTML=data.following + " Following";
+            }))
+        }
+    </script>
 </html>
